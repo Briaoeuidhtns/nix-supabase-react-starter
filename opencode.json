@@ -9,6 +9,16 @@
         "mcp"
       ],
       "enabled": true
+    },
+    "supabase-local": {
+      "type": "remote",
+      "url": "http://127.0.0.1:55321/mcp",
+      "enabled": true,
+      "oauth": false,
+      "timeout": 30000
     }
+  },
+  "experimental": {
+    "mcp_timeout": 30000
   }
 }
