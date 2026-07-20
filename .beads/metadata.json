@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "nix_supabase_starter",
+  "project_id": "0e7b2747-260f-4b6e-886f-e1e7481f0712"
+}
