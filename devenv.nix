@@ -79,6 +79,7 @@ in
     git
     postgresql_17
     supabase-cli
+    typescript-language-server
     syncSupabaseEnv
     supabaseDev
     viteDev
