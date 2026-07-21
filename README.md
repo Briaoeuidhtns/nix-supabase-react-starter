@@ -1,21 +1,24 @@
 # Nix Supabase Starter
 
-TanStack Start development environment with TanStack Query, Table, Form, Router, Tailwind CSS, Biome, Nix flakes, devenv, direnv, pnpm, local Supabase, and `opencode-desktop`.
+TanStack Start development environment with TanStack Query, Table, Form, Router, Tailwind CSS, Biome, Nix, devenv, pnpm, local Supabase, and `opencode-desktop`.
 
 ## Requirements
 
-- Nix with flakes enabled
-- direnv with a shell hook installed
+- Nix
+- devenv CLI 2.1 or newer (`nix profile install nixpkgs#devenv`)
 - A running Docker-compatible runtime for Supabase containers
 
 ## Start
 
 ```sh
-direnv allow
+devenv shell
+# Inside the devenv shell:
 devenv up
 ```
 
 `devenv up` starts the local Supabase stack, applies pending migrations, writes `.env.local` for Vite, and runs the TanStack Start dev server.
+
+To activate the environment automatically, install direnv with its shell hook and run `direnv allow`. The checked-in `.envrc` uses the devenv CLI directly; it does not evaluate a flake.
 
 ## URLs
 
@@ -26,6 +29,8 @@ devenv up
 
 ## Commands
 
+- `devenv shell`: enter the development environment
+- `devenv update`: update the pinned inputs in `devenv.lock`
 - `pnpm dev`: run TanStack Start with Vite
 - `pnpm build`: build the production server and client bundles
 - `pnpm test`: run the Vitest suite

@@ -71,8 +71,6 @@ EOF
   '';
 in
 {
-  devenv.root = lib.mkDefault (builtins.getEnv "PWD");
-
   packages = with pkgs; [
     biome
     docker-client
